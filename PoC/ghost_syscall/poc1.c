@@ -56,3 +56,12 @@ int main() {
 
     return 0;
 }
+
+/*
+call [existing stub in ntdll.dll]
+
+where we called into the function that ended with ret, therefore both the stack and CET shadow stack were left preserved and aligned
+shadow stack sees call -> ret, so it is happy
+by directly loading the gadgets from the ntdll.dll, where on a CET-Enabled system they are CET-Compliant, we manage to preserve and align the shadow stack
+by doing this we managed to successfuly replace the functionality of building inline syscall stubs by staying in accordance with hardware enforced protections
+*/
