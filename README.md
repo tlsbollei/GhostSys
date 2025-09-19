@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-**@tlsbollei**
+author -> **@tlsbollei**
 
 A research-grade PoC toolkit demonstrating five CET-compliant syscall evasion techniques that bypass modern, commercial and world class EDRs on Windows 11 (SentinelOne Singularity XDR, CrowdStrike Falcon, Microsoft Defender for Endpoint).
 
@@ -18,6 +18,7 @@ The research paper is in the process of publishment. Until then, it will remain 
 > [!NOTE]
 > This project is released strictly for educational, academic, and red team research purposes. The techniques shown are meant to help improve system defenses — not to aid or promote unauthorized access, malware development, or exploitation. Use responsibly, ethically, and only in lab environments or with explicit permission. You are solely responsible for any use of this code.
 That is why, as a result, the eBPF JIT driver abuse PoC comes pre-shipped with a minimal high-level skeleton of both the kernel-land driver and user-mode loader, as a full proof of concept implementation would be far too dangerous, and we do not want that.
+
 
 
 
